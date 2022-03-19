@@ -3,6 +3,25 @@
 <meta charset="UTF-8">
 <title>Сайт web-студії "Web-DECO"</title>
 <link rel="stylesheet" href="style.css">
+<script type = "text/javascript">
+    function send(){
+    var valid = true;
+    var elems = document.forms[0].elements;
+    for(var i = 0; i < document.forms[0].length; i++){
+        if( elems[i].getAttribute('type') == 'text' ||
+            elems[i].getAttribute('type') == 'password' ||
+            elems[i].getAttribute('type') == 'email'){
+                if(elems[i].value == " "){
+                    elems[i].style.border = '2px solid red';
+                    valid = false;
+                }
+            }
+    }
+    if(!valid){
+        alert('Заповніть всі поля!!!')
+        return false;
+    }
+}</script>
 </head>
 <body>
     <table border="1" align="center" cellpadding = "10">
@@ -97,7 +116,7 @@
         </tr>
         <tr>
             <td background = "images/bg-3.jpg" colspan="2" valign = "middle" height = "90">
-                <font size = "4">Сайт розробив "Автор"</font>
+                <font size = "4">Сайт розробив "Богдан Стрельчук"</font>
             </td>
         </tr>
     </table>
