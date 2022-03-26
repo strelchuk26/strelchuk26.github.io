@@ -1,6 +1,5 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    background-image: url("images/bg.jpg");
 }
 .shadowtext{
     text-shadow: 1px 3px 2px white, 0 0 1em red;
