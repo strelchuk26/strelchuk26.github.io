@@ -36,54 +36,54 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">
+            <td colspan="2" class="header">
                 <font size = "4">
                     <b>
-                        <a href="#">Головна</a>
-                        <a href="#">Фотогарея</a>
-                        <a href="#">Телефони</a>
-                        <a href="#">Статистика</a>
-                        <a href="#">Зареєстровані</a>
+                        <a href="#" class="header-link">Головна</a>
+                        <a href="#" class="header-link">Фотогарея</a>
+                        <a href="#" class="header-link">Телефони</a>
+                        <a href="#" class="header-link">Статистика</a>
+                        <a href="#" class="header-link">Зареєстровані</a>
                     </b>
                 </font>
             </td>
         </tr>
         <tr>
-            <td width = "30%" valigh = "top">
-                <center><canvas id = "canvas" height="300" width="130"></canvas></center>
-                <hr>
-                <font size = "5" color = "navy">
-                    <h2>Новини</h2>
-                </font>
-                <font size = "5">
-                    <ul>
-                        <li><a href="#">Сайт будівельної компанії</a></li>
-                        <li><a href="#">Сайт ТМ "Новашкола"</a></li>
-                        <li><a href="#">Редизайн сайту classno.com.ua</a></li>
-                        <li><a href="#">Розробка CMS для Metro Cash&Carry</a></li>
-                        <li><a href="#">Сайт-візитка дизайнера інтерфейсів</a></li>
-                        <p align = "right"><a href="#">Інші...</a></p>
-                    </ul>
-                </font>
+            <td width = "30%" valign = "top">
+                <div class="news">
+                    <font size = "5" color = "navy">
+                        <h2 align = "center">Новини</h2>
+                    </font>
+                    <font size = "5">
+                        <ul>
+                            <li><a href="#">Сайт будівельної компанії</a></li>
+                            <li><a href="#">Сайт ТМ "Новашкола"</a></li>
+                            <li><a href="#">Редизайн сайту classno.com.ua</a></li>
+                            <li><a href="#">Розробка CMS для Metro Cash&Carry</a></li>
+                            <li><a href="#">Сайт-візитка дизайнера інтерфейсів</a></li>
+                            <p align = "right"><a href="#">Інші...</a></p>
+                        </ul>
+                    </font>
+                </div>
                 <hr>
                 <h1 align = "center"><font color = "green">Реєстрація</font></h1>
-                <form action="forma.php" method="post" onsubmit="return send();">
-                    <table align="center" bgcolor = "#ccc">
+                <form action="forma.php" method="post" onsubmit="send();">
+                    <table align="center" bgcolor = "#ccc" class="form">
                         <tr>
                             <td><font color = "green">Прізвище</font>: </td>
-                            <td><input type="text" size = "10" name="name2" maxlength="20"> </td>
+                            <td><input type="text" size = "10" name="name2" maxlength="20" class="form-input"> </td>
                         </tr>
                         <tr>
                             <td><font color = "green">Ім'я</font>: </td>
-                            <td><input type="text" size = "10" name="name1" maxlength="20"> </td>
+                            <td><input type="text" size = "10" name="name1" maxlength="20" class="form-input"> </td>
                         </tr>
                         <tr>
                             <td><font color = "green">E-Mail</font>: </td>
-                            <td><input type="email" size = "10" name="email" maxlength="20"> </td>
+                            <td><input type="email" size = "10" name="email" maxlength="20" class="form-input"> </td>
                         </tr>
                         <tr>
                             <td><font color = "green">Пароль</font>: </td>
-                            <td><input type="password" size = "10" name="password" maxlength="20"> </td>
+                            <td><input type="password" size = "10" name="password" maxlength="20" class="form-input"> </td>
                         </tr>
                     </table>
                     <p align = "center">
@@ -92,6 +92,7 @@
                     </p>
                 </form>
                 <hr>
+                <center><canvas id = "canvas" height="300" width="130"></canvas></center>
             </td>
             <td width = "70%">
                 <h2>Зробити сайт з нами легко</h2>
