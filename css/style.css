@@ -4,9 +4,6 @@ body{
 a{
     text-decoration: none;
 }
-a:hover{
-
-}
 .shadowtext{
     text-shadow: 1px 3px 2px white, 0 0 1em red;
     color: #210042;

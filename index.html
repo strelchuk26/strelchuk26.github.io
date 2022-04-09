@@ -3,7 +3,9 @@
 <meta charset="UTF-8">
 <title>Сайт web-студії "Web-DECO"</title>
 <link rel="stylesheet" href="css/style.css">
-<script src="js/clock1.js"></script>
+<link rel="stylesheet" href="css/flipclock.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/flipclock.js"></script>
 <script type = "text/javascript">
     function send(){
     var valid = true;
@@ -19,13 +21,10 @@
             }
     }
     if(!valid){
-        alert('Заповніть всі поля!!!')
+        alert('Заповніть всі поля!!!');
         return false;
     }
-}</script>
-<script>
-    window.onload = function(){
-    setInterval(clockPainting, 1000);}
+}
 </script>
 </head>
 <body background="images/bg.jpg">
@@ -50,6 +49,8 @@
         </tr>
         <tr>
             <td width = "30%" valign = "top">
+                <div class="clock" style="margin:2em;"></div>
+                <hr>
                 <div class="news">
                     <font size = "5" color = "navy">
                         <h2 align = "center">Новини</h2>
@@ -67,7 +68,7 @@
                 </div>
                 <hr>
                 <h1 align = "center"><font color = "green">Реєстрація</font></h1>
-                <form action="forma.php" method="post" onsubmit="send();">
+                <form action="forma.php" method="post" onsubmit = "return send()">
                     <table align="center" bgcolor = "#ccc" class="form">
                         <tr>
                             <td><font color = "green">Прізвище</font>: </td>
@@ -92,7 +93,6 @@
                     </p>
                 </form>
                 <hr>
-                <center><canvas id = "canvas" height="300" width="130"></canvas></center>
             </td>
             <td width = "70%">
                 <h2>Зробити сайт з нами легко</h2>
@@ -128,5 +128,16 @@
             </td>
         </tr>
     </table>
+    <script type="text/javascript">
+        var clock;
+        
+        $(document).ready(function() {
+            var date = new Date('2014-01-01 05:02:12 pm');
+
+            clock = $('.clock').FlipClock(date, {
+                clockFace: 'TwentyFourHourClock'
+            });
+        });
+    </script>
 </body>
 </html>
